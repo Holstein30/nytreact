@@ -19,7 +19,7 @@ app.use(routes);
 // Set up promises with mongoose
 mongoose.Promise = global.Promise;
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/nytarticles");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/nytreact");
 
 // Start the API server
 app.listen(PORT, () =>
