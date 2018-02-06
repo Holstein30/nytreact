@@ -7,7 +7,12 @@ const Article = ({ title, url, _id, date, handleClick, buttonText, saved }) => (
     <h3>
       <em>{title}</em>{" "}
       <span className="btn-group pull-right">
-        <a className="btn btn-default" href={url} rel="noopener noreferrer" target="_blank">
+        <a
+          className="btn btn-default"
+          href={url}
+          rel="noopener noreferrer"
+          target="_blank"
+        >
           View Article
         </a>
         <button onClick={() => handleClick(_id)} className="btn btn-primary">

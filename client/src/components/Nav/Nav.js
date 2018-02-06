@@ -18,13 +18,13 @@ const Nav = () => (
           <span className="icon-bar" />
         </button>
         <Link className="navbar-brand" to="/">
-          NYT-React
+          NYT React Scraper
         </Link>
       </div>
       <div className="collapse navbar-collapse navbar-ex1-collapse">
         <ul className="nav navbar-nav navbar-right">
           <li>
-            <Link to="/">Search</Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
             <Link to="/saved">Saved Articles</Link>

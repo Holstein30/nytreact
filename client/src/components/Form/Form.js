@@ -43,7 +43,7 @@ const Form = props => (
         type="submit"
         className="btn btn-lg btn-danger"
       >
-        Submit
+        Search
       </button>
     </div>
   </form>

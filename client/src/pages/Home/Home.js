@@ -14,7 +14,7 @@ class Home extends Component {
     q: "",
     start_year: "",
     end_year: "",
-    message: "Search For Articles To Begin!"
+    message: "To Begin Fill out Form and Click Search!"
   };
 
   handleInputChange = event => {
@@ -34,7 +34,7 @@ class Home extends Component {
         this.setState({
           articles: res.data,
           message: !res.data.length
-            ? "No New Articles Found, Try a Different Query"
+            ? "No New Articles Found, Please Try Again"
             : ""
         })
       )
@@ -58,10 +58,10 @@ class Home extends Component {
           <Col size="md-12">
             <Jumbotron>
               <h1 className="text-center">
-                <strong>(ReactJS) New York Times Article Scrubber</strong>
+                <strong>NTY Article Scraper</strong>
               </h1>
               <h2 className="text-center">
-                Search for and save articles of interest.
+                Fill Out Form & Search for Articles Below!
               </h2>
             </Jumbotron>
           </Col>
