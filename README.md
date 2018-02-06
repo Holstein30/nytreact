@@ -25,8 +25,8 @@ https://quiet-river-77612.herokuapp.com/
 
 ### View Article
 
-    1. You can view the article by clicking "View Article"
+    You can view the article by clicking "View Article"
 
 ### Remove From Saved
 
-    1. To remove an article from your saved list simply click the "Delete Article" button
+    To remove an article from your saved list simply click the "Delete Article" button
