@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const routes = require("./routes");
 const app = express();
 const PORT = process.env.PORT || 3001;
+const keys = require('./config/keys');
 
 // Configure body parser for AJAX requests
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -18,7 +19,7 @@ app.use(routes);
 
 // Set up promises with mongoose & connect to db
 mongoose.Promise = Promise;
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/nytreact");
+mongoose.connect(keys.mongoURI || "mongodb://localhost/nytreact");
 
 // Start the API server
 app.listen(PORT, () =>
