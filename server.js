@@ -4,10 +4,10 @@ const mongoose = require("mongoose");
 const routes = require("./routes");
 const app = express();
 const PORT = process.env.PORT || 3001;
-const keys = require('./config/keys');
+const keys = require("./config/keys");
 
 // Configure body parser for AJAX requests
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 // Serve up static assets
 if (process.env.NODE_ENV === "production") {
@@ -22,6 +22,4 @@ mongoose.Promise = Promise;
 mongoose.connect(keys.mongoURI || "mongodb://localhost/nytreact");
 
 // Start the API server
-app.listen(PORT, () =>
-  console.log(`Server Listening on ${PORT}!`)
-);
+app.listen(PORT, () => console.log(`Server Listening on ${PORT}!`));
