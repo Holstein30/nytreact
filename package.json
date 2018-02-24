@@ -6,10 +6,8 @@
   "scripts": {
     "server": "node server.js",
     "client": "node scripts/start-client.js",
-    "start": "concurrently \"nodemon server.js\" \"npm run client\"",
-    "build": "node scripts/build.js",
-    "heroku-postbuild":
-      "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "start": "concurrently \"node server.js\" \"npm run client\"",
+    "build": "node scripts/build.js"
   },
   "author": "",
   "license": "ISC",
